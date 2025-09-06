@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Test Runner",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/test_runner.py",
+        "console": "integratedTerminal",
+        "justMyCode": true,
+        "env": {
+          "PYTHONUNBUFFERED": "1"
+        }
+      }
+    ]
+  }
+  

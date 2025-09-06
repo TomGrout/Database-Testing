@@ -1,0 +1,111 @@
+Running test 1: Bulk Insert of Data  
+using environment trends dataset  
+Test 1 completed in 21431.02 ms
+
+Avg CPU Usage: 8.26%, Peak Memory: 61.55 MB
+
+Running test 2: Retrieving Data using Primary Key  
+Test 2 completed in 42.28 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 62.27 MB
+
+Running test 3: Retrieving Data using a Secondary Index  
+Test 3 completed in 49.70 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 61.78 MB
+
+Running test 4: Retrieving Data using no Index  
+Test 4 completed in 54.22 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 61.78 MB
+
+Running test 5: Sorting Data using a Secondary Index  
+Test 5 completed in 61717.28 ms
+
+Avg CPU Usage: 8.82%, Peak Memory: 2129.18 MB
+
+Running test 6: Sorting Data using No Index  
+Test 6 completed in 60668.33 ms
+
+Avg CPU Usage: 8.78%, Peak Memory: 2251.75 MB
+
+Running test 7: Update using Primary Index  
+Test 7 completed in 82.94 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 2272.84 MB
+
+Running test 8: Bulk Update using a Secondary Index  
+Test 8 completed in 55651.52 ms
+
+Avg CPU Usage: 15.82%, Peak Memory: 2272.85 MB
+
+Running test 9: Delete Primary Key  
+Test 9 completed in 101.18 ms
+
+Avg CPU Usage: 13.0%, Peak Memory: 144.14 MB
+
+Running test 10: Delete using Primary Index  
+Test 10 completed in 81.79 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 144.15 MB
+
+Running test 11: Bulk Delete using a Secondary Index  
+Test 11 completed in 112.49 ms
+
+Avg CPU Usage: 10.4%, Peak Memory: 144.15 MB
+
+Running test 12: Bulk Delete using No Index  
+Test 12 completed in 212.67 ms
+
+Avg CPU Usage: 15.17%, Peak Memory: 144.92 MB
+
+Running test 13: Sort Descending using Primary Index  
+Test 13 completed in 49420.09 ms
+
+Avg CPU Usage: 13.76%, Peak Memory: 1883.32 MB
+
+Running test 14: Query Sparse Columns with Index  
+Test 14 completed in 55546.91 ms
+
+Avg CPU Usage: 6.49%, Peak Memory: 1890.25 MB
+
+Running test 15: Query Sparse Columns without Index  
+Test 15 completed in 227.09 ms
+
+Avg CPU Usage: 11.17%, Peak Memory: 152.16 MB
+
+&nbsp;
+
+Running test 16: Retrieve Results from dual Dataset
+
+Primary Dataset Sample (testCollection):  
+{'_id': ObjectId('67ffde95636f706f7a826717'), 'business_id': '---kPU91CF4Lq2-WlRu9Lw', 'dates': [datetime.datetime(2020, 3, 13, 21, 10, 56), datetime.datetime(2020, 6, 2, 22, 18, 6), datetime.datetime(2020, 7, 24, 22, 42, 27), datetime.datetime(2020, 10, 24, 21, 36, 13), datetime.datetime(2020, 12, 9, 21, 23, 33), datetime.datetime(2021, 1, 20, 17, 34, 57), datetime.datetime(2021, 4, 30, 21, 2, 3), datetime.datetime(2021, 5, 25, 21, 16, 54), datetime.datetime(2021, 8, 6, 21, 8, 8), datetime.datetime(2021, 10, 2, 15, 15, 42), datetime.datetime(2021, 11, 11, 16, 23, 50)]}  
+{'_id': ObjectId('67ffde95636f706f7a826718'), 'business_id': '--0iUa4sNDFiZFrAdIWhZQ', 'dates': [datetime.datetime(2010, 9, 13, 21, 43, 9), datetime.datetime(2011, 5, 4, 23, 8, 15), datetime.datetime(2011, 7, 18, 22, 30, 31), datetime.datetime(2012, 9, 7, 20, 28, 50), datetime.datetime(2013, 3, 27, 15, 57, 36), datetime.datetime(2013, 8, 13, 0, 31, 34), datetime.datetime(2013, 8, 13, 0, 31, 48), datetime.datetime(2013, 9, 23, 17, 39, 38), datetime.datetime(2013, 11, 18, 6, 34, 8), datetime.datetime(2014, 4, 12, 23, 4, 47)]}
+
+Secondary Dataset Sample (secondCollection):  
+{'_id': 0, 'description': 'Category 0'}  
+{'_id': 1, 'description': 'Category 1'}
+
+Test 16 completed in 190.52 ms
+
+Avg CPU Usage: 2.55%, Peak Memory: 101.38 MB
+
+&nbsp;
+
+Test Summary:  
+Test 1: 21431.02 ms  
+Test 2: 42.28 ms  
+Test 3: 49.70 ms  
+Test 4: 54.22 ms  
+Test 5: 61717.28 ms  
+Test 6: 60668.33 ms  
+Test 7: 82.94 ms  
+Test 8: 55651.52 ms  
+Test 9: 101.18 ms  
+Test 10: 81.79 ms  
+Test 11: 112.49 ms  
+Test 12: 212.67 ms  
+Test 13: 49420.09 ms  
+Test 14: 55546.91 ms  
+Test 15: 227.09 ms
+Test 16: 190.52 ms

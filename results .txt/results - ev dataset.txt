@@ -1,0 +1,114 @@
+Running test 1: Bulk Insert of Data  
+running test 1  
+Test 1 completed in 4789694.87 ms
+
+Avg CPU Usage: 4.52%, Peak Memory: 409.62 MB
+
+Running test 2: Retrieving Data using Primary Key  
+running test 2  
+Test 2 completed in 64.41 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 403.67 MB
+
+Running test 3: Retrieving Data using a Secondary Index  
+Test 3 completed in 9560.36 ms
+
+Avg CPU Usage: 4.11%, Peak Memory: 601.02 MB
+
+Running test 4: Retrieving Data using no Index  
+Test 4 completed in 216.39 ms
+
+Avg CPU Usage: 3.73%, Peak Memory: 594.16 MB
+
+Running test 5: Sorting Data using a Secondary Index  
+Test 5 completed in 127392.46 ms
+
+Avg CPU Usage: 3.93%, Peak Memory: 2925.7 MB
+
+Running test 6: Sorting Data using No Index  
+Test 6 completed in 69014.35 ms
+
+Avg CPU Usage: 4.21%, Peak Memory: 3021.96 MB
+
+Running test 7: Update using Primary Index  
+Test 7 completed in 76.68 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 3042.75 MB
+
+Running test 8: Bulk Update using a Secondary Index  
+Test 8 completed in 145.67 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 362.24 MB
+
+Running test 9: Delete Primary Key  
+Test 9 completed in 142.34 ms
+
+Avg CPU Usage: 4.8%, Peak Memory: 363.06 MB
+
+Running test 10: Delete using Primary Index  
+Test 10 completed in 97.16 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 363.06 MB
+
+Running test 11: Bulk Delete using a Secondary Index  
+running test 11  
+Matching documents: 6017  
+Test 11 completed in 23568.00 ms
+
+Avg CPU Usage: 3.93%, Peak Memory: 362.77 MB
+
+Running test 12: Bulk Delete using No Index  
+Test 12 completed in 5807.03 ms
+
+Avg CPU Usage: 4.96%, Peak Memory: 363.72 MB
+
+Running test 13: Sort Descending using Primary Index  
+Test 13 completed in 241.21 ms
+
+Avg CPU Usage: 7.0%, Peak Memory: 362.37 MB
+
+Running test 14: Query Sparse Columns with Index  
+running test 13  
+Test 14 completed in 145.52 ms
+
+Avg CPU Usage: 1.0%, Peak Memory: 363.23 MB
+
+Running test 15: Query Sparse Columns without Index  
+Test 15 completed in 242732.48 ms
+
+Avg CPU Usage: 5.05%, Peak Memory: 801.64 MB
+
+Running test 16: Retrieve Results from Dataset:  
+Running dual dataset retrieval test...
+
+Primary Dataset Sample (testCollection):  
+{'_id': ObjectId('67f90d4a4e607336a3d1c57e'), 'business_id': '-dB0vYhiTeBDlayTzT9kiw', 'dates': [datetime.datetime(2010, 2, 11, 0, 16, 58), datetime.datetime(2010, 2, 14, 0, 51, 23), datetime.datetime(2010, 5, 29, 23, 53, 35)], 'updatedField': True}  
+etc...
+
+Secondary Dataset Sample (secondCollection):  
+{'_id': 0, 'description': 'Category 0'}  
+{'_id': 1, 'description': 'Category 1'}  
+Test 16 completed in 377.50 ms
+
+Avg CPU Usage: 16.23%, Peak Memory: 362.7 MB
+
+&nbsp;
+
+Test Summary:  
+Test 1: 4789694.87ms  
+Test 2: 64.41ms  
+Test 3: 9560.36ms  
+Test 4: 216.39ms  
+Test 5: 127392.46ms  
+Test 6: 69014.35ms  
+Test 7: 76.68ms  
+Test 8: 145.67ms  
+Test 9: 142.34ms  
+Test 10: 97.16ms  
+Test 11: 23568.00ms  
+Test 12: 5807.03ms  
+Test 13: 241.21ms  
+Test 14: 145.52ms  
+Test 15: 242732.48ms
+
+Test 16: 362.7ms

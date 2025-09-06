@@ -1,0 +1,145 @@
+**Yelp dataset**
+
+* * *
+
+Running test 1: Bulk Insert of Data  
+Test 1 completed in 1931266.74 ms
+
+Avg CPU Usage: 5.08%, Peak Memory: 870.18 MB
+
+&nbsp;
+
+Running test 2: Retrieving Data using Primary Key  
+Test 2 completed in 63.51 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 859.32 MB
+
+&nbsp;
+
+Running test 3: Retrieving Data using a Secondary Index  
+Test 3 completed in 53.53 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 856.03 MB
+
+&nbsp;
+
+Running test 4: Retrieving Data using no Index  
+Test 4 completed in 176.97 ms
+
+Avg CPU Usage: 7.75%, Peak Memory: 856.03 MB
+
+&nbsp;
+
+Running test 5: Sorting Data using a Secondary Index  
+Test 5 completed in 194206.43 ms
+
+Avg CPU Usage: 5.79%, Peak Memory: 3096.5 MB
+
+Running test 5: Sorting Data using a Secondary Index  
+Test 5 completed in 194093.22 ms
+
+Avg CPU Usage: 4.43%, Peak Memory: 3091.22 MB
+
+&nbsp;
+
+Running test 6: Sorting Data using No Index  
+Test 6 completed in 115614.25 ms
+
+Avg CPU Usage: 7.01%, Peak Memory: 3087.16 MB
+
+&nbsp;
+
+Running test 7: Update using Primary Index  
+Test 7 completed in 90.37 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 2687.64 MB
+
+&nbsp;
+
+Running test 8: Bulk Update using a Secondary Index  
+Test 8 completed in 66581.34 ms
+
+Avg CPU Usage: 7.84%, Peak Memory: 2687.64 MB
+
+&nbsp;
+
+Running test 9: Delete Primary Key  
+Test 9 completed in 172.01 ms
+
+Avg CPU Usage: 3.15%, Peak Memory: 897.6 MB
+
+&nbsp;
+
+Running test 10: Delete using Primary Index  
+Test 10 completed in 58.42 ms
+
+Avg CPU Usage: 0.0%, Peak Memory: 939.64 MB
+
+&nbsp;
+
+Running test 11: Bulk Delete using a Secondary Index  
+Test 11 completed in 42119.47 ms
+
+Avg CPU Usage: 9.13%, Peak Memory: 939.64 MB
+
+&nbsp;
+
+Running test 12: Bulk Delete using No Index  
+Test 12 completed in 218.28 ms
+
+Avg CPU Usage: 11.77%, Peak Memory: 927.64 MB
+
+&nbsp;
+
+Running test 13: Sort Descending using Primary Index  
+Test 13 completed in 110570.21 ms
+
+Avg CPU Usage: 10.42%, Peak Memory: 2652.3 MB
+
+&nbsp;
+
+Running test 14: Query Sparse Columns with Index  
+Test 14 completed in 55729.54 ms
+
+Avg CPU Usage: 8.75%, Peak Memory: 2658.38 MB
+
+&nbsp;
+
+Running test 15: Query Sparse Columns without Index  
+Test 15 completed in 259.18 ms
+
+Avg CPU Usage: 9.43%, Peak Memory: 944.21 MB
+
+&nbsp;
+
+Running test 16: Retrieve Results from dual Dataset
+
+Primary Dataset Sample (testCollection):  
+{'_id': ObjectId('67ffde95636f706f7a826717'), 'business_id': '---kPU91CF4Lq2-WlRu9Lw', 'dates': [datetime.datetime(2020, 3, 13, 21, 10, 56), datetime.datetime(2020, 6, 2, 22, 18, 6), datetime.datetime(2020, 7, 24, 22, 42, 27), datetime.datetime(2020, 10, 24, 21, 36, 13), datetime.datetime(2020, 12, 9, 21, 23, 33), datetime.datetime(2021, 1, 20, 17, 34, 57), datetime.datetime(2021, 4, 30, 21, 2, 3), datetime.datetime(2021, 5, 25, 21, 16, 54), datetime.datetime(2021, 8, 6, 21, 8, 8), datetime.datetime(2021, 10, 2, 15, 15, 42), datetime.datetime(2021, 11, 11, 16, 23, 50)]}  
+{'_id': ObjectId('67ffde95636f706f7a826718'), 'business_id': '--0iUa4sNDFiZFrAdIWhZQ', 'dates': [datetime.datetime(2010, 9, 13, 21, 43, 9), datetime.datetime(2011, 5, 4, 23, 8, 15), datetime.datetime(2011, 7, 18, 22, 30, 31), datetime.datetime(2012, 9, 7, 20, 28, 50), datetime.datetime(2013, 3, 27, 15, 57, 36), datetime.datetime(2013, 8, 13, 0, 31, 34), datetime.datetime(2013, 8, 13, 0, 31, 48), datetime.datetime(2013, 9, 23, 17, 39, 38), datetime.datetime(2013, 11, 18, 6, 34, 8), datetime.datetime(2014, 4, 12, 23, 4, 47)]}
+
+Secondary Dataset Sample (secondCollection):  
+{'_id': 0, 'description': 'Category 0'}  
+{'_id': 1, 'description': 'Category 1'}
+
+Test 16 completed in 471.72 ms
+
+Avg CPU Usage: 1.98%, Peak Memory: 872.72 MB
+
+Test Summary:  
+Test 1: 1931266.74ms  
+Test 2: 63.51ms  
+Test 3: 53.53ms  
+Test 4: 176.97ms  
+Test 5: 194093.22ms  
+Test 6: 115614.25ms  
+Test 7: 90.37ms  
+Test 8: 66581.34ms  
+Test 9: 172.01ms  
+Test 10: 58.42ms  
+Test 11: 42119.47ms  
+Test 12: 218.28ms  
+Test 13: 110570.21ms  
+Test 14: 55729.54ms  
+Test 15: 259.18ms
+Test 16: 471.12ms
