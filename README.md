@@ -4,4 +4,4 @@ a series of tests that monitor cpu load, operation speeds and scalabilty of diff
 
 tests carried out so far on: mongoDB, Neo4J, mySQL, PostreSQL
 
-each with 5+ unique large datasets
+over 20 test cases, with 5+ unique large datasets
